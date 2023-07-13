@@ -343,9 +343,10 @@ class LessonController extends Controller
             ->sortByDesc('orden')->values()->all();
 
         $lecciones = DB::table('lessons')
-            ->select('lessons.id', 'lessons.slug', 'lessons.titulo', 'lessons.descripcion', 'lessonimages.imagen', 'lessons.audio', 'lessons.id_categoria', 'lessons.id_tipo', 'categorias.slug as slug_cat')
+            ->select('lessons.id', 'lessons.slug', 'lessons.titulo', 'lessons.descripcion', 'lessonimages.imagen', 'lessons.audio', 'lessons.id_categoria', 'lessons.id_tipo', 'categorias.slug as slug_cat', 'paginas.slug as slug_pag')
             ->join('categorias', 'categorias.id', '=', 'lessons.id_categoria')
             ->join('lessonimages', 'lessonimages.id_lesson', '=', 'lessons.id')
+            ->join('paginas', 'paginas.id', '=', 'lessons.id_pagina')
             ->where('lessons.estado', 'publica')
             ->where('lessonimages.id_imagen', '0')
             ->orderByDesc('lessons.orden')
