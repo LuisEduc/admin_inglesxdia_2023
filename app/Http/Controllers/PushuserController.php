@@ -120,7 +120,8 @@ class PushuserController extends Controller
         if (is_null($lesson->titulo)) {
 
             $data = [
-                "to" => "/topics/inglesxdia-main",
+                // "to" => "/topics/inglesxdia-main",
+                "to" => "/topics/inglesxdia-notifications-test",
                 "notification" => [
                     "title" => 'Recordatorio 🔔',
                     "body" => '¡Tómate 5 minutos para practicar!',
@@ -132,7 +133,8 @@ class PushuserController extends Controller
         } else {
 
             $data = [
-                "to" => "/topics/inglesxdia-main",
+                // "to" => "/topics/inglesxdia-main",
+                "to" => "/topics/inglesxdia-notifications-test",
                 "notification" => [
                     "title" => 'Lección de hoy ¡Vamos a practicar! 🔔',
                     "body" => $lesson->titulo_seo,
