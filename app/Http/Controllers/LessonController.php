@@ -447,15 +447,45 @@ class LessonController extends Controller
     {
         $cursos = [
             [
-                "titulo" => "Curso de inglés 1",
-                "descripcion" => "Date un regalo para toda la vida. ¡Regístrate y obtén un 25% off en tu curso de inglés! Accede a miles de horas de ejercicios interactivos.",
-                "link" => "http://127.0.0.1:5500/index.html",
+                "titulo" => "Curso de ingles BUSUU",
+                "descripcion" => "El curso de inglés gratis de Busuu te ayuda a aprender inglés de forma social y práctica, con lecciones personalizadas y la ayuda de hablantes nativos",
+                "link" => "https://www.busuu.com/es",
                 "boton" => "Ver curso",
             ],
             [
-                "titulo" => "Curso de inglés 2",
-                "descripcion" => "Date un regalo para toda la vida. ¡Regístrate y obtén un 25% off en tu curso de inglés! Accede a miles de horas de ejercicios interactivos.",
-                "link" => "http://127.0.0.1:5500/index.html",
+                "titulo" => "Curso de inglés Edutin",
+                "descripcion" => "Aprende inglés online con el curso gratuito de Edutin que cuenta con lecciones interactivas, apoyo de la comunidad y certificado opcional",
+                "link" => "https://app.edutin.com/category/79",
+                "boton" => "Ver curso",
+            ],
+            [
+                "titulo" => "Curso de inglés Alison",
+                "descripcion" => "Los cursos de inglés en línea de Alison ofrecen una variedad de cursos de inglés con certificación gratuita. Solo necesitas registrarte y comenzar a aprender hoy",
+                "link" => "https://alison.com/es/cursos?query=inglés",
+                "boton" => "Ver curso",
+            ],
+            [
+                "titulo" => "Curso de inglés",
+                "descripcion" => "Aprende inglés gratis con cursos en línea para todos los niveles, desde principiante hasta avanzado",
+                "link" => "https://www.curso-ingles.com/",
+                "boton" => "Ver curso",
+            ],
+            [
+                "titulo" => "Curso de inglés UNAM",
+                "descripcion" => "Aprende inglés de forma gratuita con el curso de inglés online que ofrece la UNAM, diponible para todos los niveles",
+                "link" => "https://avi.cuaieed.unam.mx/",
+                "boton" => "Ver curso",
+            ],
+            [
+                "titulo" => "Curso de inglés Udemy",
+                "descripcion" => "Udemy ofrece una variedad de cursos de inglés gratuitos para todos los niveles, desde principiante hasta avanzado. También ofrece la opción de obtener una certificación internacional.",
+                "link" => "https://www.udemy.com/course/ingles-basico-i-ai/",
+                "boton" => "Ver curso",
+            ],
+            [
+                "titulo" => "Curso de inglés edX",
+                "descripcion" => "Aprende inglés gratis con los cursos online de edX. Aprende gramática básica, escritura, comprensión auditiva a través de videos, lecciones y ejercicios",
+                "link" => "https://www.edx.org/es/learn/professional-writing/university-of-california-berkeley-how-to-write-an-essay",
                 "boton" => "Ver curso",
             ],
         ];
