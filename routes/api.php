@@ -64,7 +64,11 @@ Route::get('palabras','App\Http\Controllers\DiariopalabraController@getPalabras'
 Route::get('buscar','App\Http\Controllers\LessonController@buscar');
 // Retorna todos los titulos de las lecciones: http://127.0.0.1:8000/api/buscar
 Route::get('buscar/{termino}','App\Http\Controllers\LessonController@buscarTermino');
-// Bsucar por temino especifico de lecciones: http://127.0.0.1:8000/api/buscar/formas de ...
+// Buscar por temino especifico de lecciones: http://127.0.0.1:8000/api/buscar/formas de ...
+
+// Cursos
+Route::get('cursos','App\Http\Controllers\LessonController@getCursos');
+// Selecciona todos los cursos: http://127.0.0.1:8000/api/cursos
 
 // Guardar Token
 Route::post('token', 'App\Http\Controllers\PushuserController@saveToken');

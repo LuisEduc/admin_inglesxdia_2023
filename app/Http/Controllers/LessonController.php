@@ -319,11 +319,11 @@ class LessonController extends Controller
     public function getLeccionContenido($slug_cat, $slug)
     {
         $contenido = DB::table('lessons')
-        ->select('contenido')
-        ->join('categorias', 'categorias.id', '=', 'lessons.id_categoria')
-        ->where('categorias.slug', $slug_cat)
-        ->where('lessons.slug', $slug)
-        ->get();
+            ->select('contenido')
+            ->join('categorias', 'categorias.id', '=', 'lessons.id_categoria')
+            ->where('categorias.slug', $slug_cat)
+            ->where('lessons.slug', $slug)
+            ->get();
 
         $json['contenido'] = $contenido;
         return $json;
@@ -440,6 +440,27 @@ class LessonController extends Controller
             ->get();
 
         $json['results'] = $lecciones;
+        return $json;
+    }
+
+    public function getCursos()
+    {
+        $cursos = [
+            [
+                "titulo" => "Curso de inglés 1",
+                "descripcion" => "Date un regalo para toda la vida. ¡Regístrate y obtén un 25% off en tu curso de inglés! Accede a miles de horas de ejercicios interactivos.",
+                "link" => "http://127.0.0.1:5500/index.html",
+                "boton" => "Ver curso",
+            ],
+            [
+                "titulo" => "Curso de inglés 2",
+                "descripcion" => "Date un regalo para toda la vida. ¡Regístrate y obtén un 25% off en tu curso de inglés! Accede a miles de horas de ejercicios interactivos.",
+                "link" => "http://127.0.0.1:5500/index.html",
+                "boton" => "Ver curso",
+            ],
+        ];
+
+        $json['cursos'] = $cursos;
         return $json;
     }
 }
