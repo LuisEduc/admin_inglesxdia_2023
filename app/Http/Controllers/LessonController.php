@@ -449,31 +449,31 @@ class LessonController extends Controller
             [
                 "id" => 0,
                 "titulo" => "Curso de inglés BUSUU",
-                "descripcion" => "El curso de inglés gratis de Busuu te ayuda a aprender inglés de forma social y práctica, con lecciones personalizadas y la ayuda de hablantes nativos",
+                "descripcion" => "El curso de inglés gratis de Busuu te ayuda a aprender inglés de forma social y práctica, con lecciones personalizadas y la ayuda de hablantes nativos.",
                 "link" => "https://www.busuu.com/es",
             ],
             [
                 "id" => 1,
                 "titulo" => "Curso de inglés Edutin",
-                "descripcion" => "Aprende inglés online con el curso gratuito de Edutin que cuenta con lecciones interactivas, apoyo de la comunidad y certificado opcional",
+                "descripcion" => "Aprende inglés online con el curso gratuito de Edutin que cuenta con lecciones interactivas, apoyo de la comunidad y certificado opcional.",
                 "link" => "https://app.edutin.com/category/79",
             ],
             [
                 "id" => 2,
                 "titulo" => "Curso de inglés Alison",
-                "descripcion" => "Los cursos de inglés en línea de Alison ofrecen una variedad de cursos de inglés con certificación gratuita. Solo necesitas registrarte y comenzar a aprender hoy",
+                "descripcion" => "Los cursos de inglés en línea de Alison ofrecen una variedad de cursos de inglés con certificación gratuita. Solo necesitas registrarte y comenzar a aprender hoy.",
                 "link" => "https://alison.com/es/cursos?query=inglés",
             ],
             [
                 "id" => 3,
                 "titulo" => "Curso de inglés",
-                "descripcion" => "Aprende inglés gratis con cursos en línea para todos los niveles, desde principiante hasta avanzado",
+                "descripcion" => "Aprende inglés gratis con cursos en línea para todos los niveles, desde principiante hasta avanzado.",
                 "link" => "https://www.curso-ingles.com/",
             ],
             [
                 "id" => 4,
                 "titulo" => "Curso de inglés UNAM",
-                "descripcion" => "Aprende inglés de forma gratuita con el curso de inglés online que ofrece la UNAM, diponible para todos los niveles",
+                "descripcion" => "Aprende inglés de forma gratuita con el curso de inglés online que ofrece la UNAM, diponible para todos los niveles.",
                 "link" => "https://avi.cuaieed.unam.mx/",
             ],
             [
@@ -485,7 +485,7 @@ class LessonController extends Controller
             [
                 "id" => 6,
                 "titulo" => "Curso de inglés edX",
-                "descripcion" => "Aprende inglés gratis con los cursos online de edX. Aprende gramática básica, escritura, comprensión auditiva a través de videos, lecciones y ejercicios",
+                "descripcion" => "Aprende inglés gratis con los cursos online de edX. Aprende gramática básica, escritura, comprensión auditiva a través de videos, lecciones y ejercicios.",
                 "link" => "https://www.edx.org/es/learn/professional-writing/university-of-california-berkeley-how-to-write-an-essay",
             ],
         ];
