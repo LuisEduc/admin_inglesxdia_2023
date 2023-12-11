@@ -507,7 +507,7 @@ class LessonController extends Controller
                 "titulo" => "Guía para formar oraciones",
                 "descripcion" => "Aprende a formar oraciones en inglés de forma fácil y efectiva con este curso de inglés intermedio gratis. Incluye explicaciones claras, ejercicios, y ejemplos prácticos.",
                 "link" => "$direccion/guia-para-formar-oraciones.pdf",
-                "archivo" => "$hoy-guia-para-formar-oraciones.pdf",
+                "archivo" => "$hoy-guia-para-formar-oraciones.pdf"
             ],
             [
                 "id" => 1,
@@ -515,7 +515,7 @@ class LessonController extends Controller
                 "titulo" => "El verbo To Be",
                 "descripcion" => "En este curso básico de ingles, podrás aprender a usar el verbo To Be en sus formas afirmativa, negativa e interrogativa. Este verbo es fundamental en el idioma inglés, por lo que debes dominarlo.",
                 "link" => "$direccion/curso-ingles-basico.pdf",
-                "archivo" => "$hoy-curso-ingles-basico.pdf",
+                "archivo" => "$hoy-curso-ingles-basico.pdf"
             ],
         ];
 
