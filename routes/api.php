@@ -70,6 +70,10 @@ Route::get('buscar/{termino}','App\Http\Controllers\LessonController@buscarTermi
 Route::get('cursos','App\Http\Controllers\LessonController@getCursos');
 // Selecciona todos los cursos: http://127.0.0.1:8000/api/cursos
 
+// Material
+Route::get('material','App\Http\Controllers\LessonController@getMaterial');
+// Selecciona todos los materiales: http://127.0.0.1:8000/api/material
+
 // Guardar Token
 Route::post('token', 'App\Http\Controllers\PushuserController@saveToken');
 

@@ -493,4 +493,33 @@ class LessonController extends Controller
         $json['cursos'] = $cursos;
         return $json;
     }
+
+    public function getMaterial()
+    {
+
+        $hoy = date('YmdHis');
+        $direccion = 'https://admin.inglesxdia.com/material';
+
+        $material = [
+            [
+                "id" => 0,
+                "nivel" => "Inglés intermedio",
+                "titulo" => "Guía para formar oraciones",
+                "descripcion" => "Aprende a formar oraciones en inglés de forma fácil y efectiva con este curso de inglés intermedio gratis. Incluye explicaciones claras, ejercicios, y ejemplos prácticos.",
+                "link" => "$direccion/guia-para-formar-oraciones.pdf",
+                "archivo" => "$hoy-guia-para-formar-oraciones.pdf",
+            ],
+            [
+                "id" => 1,
+                "nivel" => "Curso de inglés básico",
+                "titulo" => "El verbo To Be",
+                "descripcion" => "En este curso básico de ingles, podrás aprender a usar el verbo To Be en sus formas afirmativa, negativa e interrogativa. Este verbo es fundamental en el idioma inglés, por lo que debes dominarlo.",
+                "link" => "$direccion/curso-ingles-basico.pdf",
+                "archivo" => "$hoy-curso-ingles-basico.pdf",
+            ],
+        ];
+
+        $json['material'] = $material;
+        return $json;
+    }
 }
