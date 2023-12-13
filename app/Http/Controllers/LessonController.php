@@ -517,6 +517,14 @@ class LessonController extends Controller
                 "link" => "$direccion/curso-ingles-basico.pdf",
                 "archivo" => "$hoy-curso-ingles-basico.pdf"
             ],
+            [
+                "id" => 2,
+                "nivel" => "Curso intensivo de inglés",
+                "titulo" => "Guía de inglés para viajeros",
+                "descripcion" => "Prepárate para tu viaje a Estados Unidos con nuestro PDF Guía de Inglés para Viajeros. Aprende frases prácticas para aeropuertos, hoteles y situaciones comunes que facilitarán tu experiencia",
+                "link" => "$direccion/ingles-para-viajeros.pdf",
+                "archivo" => "$hoy-ingles-para-viajeros.pdf"
+            ],
         ];
 
         $json['material'] = $material;
