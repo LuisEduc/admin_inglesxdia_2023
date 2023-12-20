@@ -525,6 +525,14 @@ class LessonController extends Controller
                 "link" => "$direccion/ingles-para-viajeros.pdf",
                 "archivo" => "$hoy-ingles-para-viajeros.pdf"
             ],
+            [
+                "id" => 3,
+                "nivel" => "Curso de inglés básico",
+                "titulo" => "In On At",
+                "descripcion" => "Aprenda la diferencia entre in, on y at con este curso de inglés básico. Cubriremos las reglas básicas, ejemplos y ejercicios para que puedas utilizar las preposiciones correctas en cualquier contexto.",
+                "link" => "$direccion/in-on-at.pdf",
+                "archivo" => "$hoy-in-on-at.pdf"
+            ]
         ];
 
         $json['material'] = $material;
