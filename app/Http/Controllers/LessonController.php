@@ -562,7 +562,7 @@ class LessonController extends Controller
 
         $pdf = Pdf::loadView('lessons.pdf', $lesson->toArray());
         $pdf->setPaper('A4', 'portrait');
-        // return $pdf->download("$slug.pdf");
-        return $pdf->stream();
+        return $pdf->download("$slug.pdf");
+        // return $pdf->stream();
     }
 }
