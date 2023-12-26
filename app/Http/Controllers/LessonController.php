@@ -11,6 +11,7 @@ use App\Models\Tipo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class LessonController extends Controller
 {
@@ -231,7 +232,7 @@ class LessonController extends Controller
      */
     public function destroy(Lesson $lesson)
     {
-        $lessonimages = Lessonimage::where('id_lesson', $lesson->id)->get()->toArray();;
+        $lessonimages = Lessonimage::where('id_lesson', $lesson->id)->get()->toArray();
         foreach ($lessonimages as $lessonimage) {
             $img = $lessonimage['imagen'];
             File::delete("imagen/$img");
@@ -537,5 +538,31 @@ class LessonController extends Controller
 
         $json['material'] = $material;
         return $json;
+    }
+
+    public function getPDF($slug)
+    {
+        $lesson = Lesson::where('slug', $slug)->first(['id', 'titulo', 'titulo_seo', 'contenido']);
+        $imagen = Lessonimage::where('id_lesson', $lesson->id)->first('imagen')->imagen;
+        $rutaImagen = public_path("imagen/$imagen");
+        $lesson->rutaImagen = $rutaImagen;
+        $titulo = $lesson->titulo;
+        $titulo_seo = $lesson->titulo_seo;
+        $contenido = $lesson->contenido;
+        $patron = '/\{pdf\}(.*?)\{pdf\}/s';
+
+        if (preg_match($patron, $contenido, $resultado)) {
+            $contenidoPdf = $resultado[1];
+            $lesson->contenido = $contenidoPdf;
+        } else {
+            abort(404);
+        }
+
+        $contenido = $lesson->contenido;
+
+        $pdf = Pdf::loadView('lessons.pdf', $lesson->toArray());
+        $pdf->setPaper('A4', 'portrait');
+        return $pdf->download("$slug.pdf");
+        // return $pdf->stream();
     }
 }

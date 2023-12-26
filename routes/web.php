@@ -29,7 +29,7 @@ Route::get('/', function () {
 
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
-    
+
     Route::get('/preguntas/eliminar/{id}/{id_lesson}', 'App\Http\Controllers\PreguntaController@eliminar')->name('preguntas.eliminar');
     Route::get('/lessonimages/eliminar/{id}/{id_lesson}', 'App\Http\Controllers\LessonimageController@eliminar')->name('lessonimages.eliminar');
     Route::get('/palabras/basico', 'App\Http\Controllers\PalabraController@basico')->name('palabras.basico');
@@ -37,6 +37,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/palabras/avanzado', 'App\Http\Controllers\PalabraController@avanzado')->name('palabras.avanzado');
     Route::get('/palabras/reproducir', 'App\Http\Controllers\PalabraController@reproducir')->name('palabras.reproducir');
     Route::get('/pushusers', 'App\Http\Controllers\PushuserController@index')->name('pushusers.index');
+    Route::get('/pdf/{slug}', 'App\Http\Controllers\LessonController@getPDF')->name('pdf');;
 
     Route::resource('/lessons', LessonController::class);
     Route::resource('/categorias', CategoriaController::class);
