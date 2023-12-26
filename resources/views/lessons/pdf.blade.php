@@ -5,30 +5,37 @@
     <title>Document</title>
     <style>
         * {
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            padding: 5rem;
         }
 
         h1 {
+            padding: 1rem 0;
             font-size: 2.5rem;
-            margin: 1rem 3rem;
+            text-align: left;
             text-align: center;
         }
 
-        div {
+        .imagen {
             text-align: center;
         }
 
         img {
             height: 400px;
             width: 325px;
-            margin: auto;
         }
 
-        ul, p {
+        .contenido ul,
+        .contenido p {
             list-style-type: none;
-            margin: 1rem 2rem;
             font-size: 1.75rem;
             text-align: justify;
+            margin-top: 1rem;
         }
 
         .contenido p em,
@@ -49,13 +56,17 @@
 
 <body>
 
-    <h1>{{$titulo_seo}}</h1>
-    <div>
-        <img src="{{ $rutaImagen }}">
+    <div class="hero">
+        <h1>{{$titulo_seo}}</h1>
+        <div class="imagen">
+            <img src="{{ $rutaImagen }}">
+        </div>
     </div>
+
     <div class="contenido">
         <p>{!!$contenido!!}</p>
     </div>
+
     <footer>
         En <a href="https://inglesxdia.tech/">inglesxdia</a> aprende inglés todos los días | Todos los derechos reservados.
     </footer>
