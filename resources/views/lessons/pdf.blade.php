@@ -11,18 +11,17 @@
         }
 
         body {
-            padding: 5rem;
+            padding: 2rem 5rem;
         }
 
         h1 {
             padding: 1rem 0;
             font-size: 2.5rem;
             text-align: left;
-            text-align: center;
         }
 
         .imagen {
-            text-align: center;
+            text-align: left;
         }
 
         img {
@@ -45,11 +44,11 @@
 
         footer {
             position: absolute;
-            bottom: 1rem;
+            bottom: 2rem;
             font-size: 1rem;
-            left: 0;
+            left: 5rem;
             right: 0;
-            text-align: center;
+            text-align: left;
         }
     </style>
 </head>
