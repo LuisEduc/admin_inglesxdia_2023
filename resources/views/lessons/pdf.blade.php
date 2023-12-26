@@ -24,13 +24,15 @@
             margin: auto;
         }
 
-        p {
+        ul, p {
+            list-style-type: none;
             margin: 1rem 2rem;
             font-size: 1.75rem;
             text-align: justify;
         }
 
-        p em {
+        .contenido p em,
+        .contenido ul em {
             font-style: normal;
         }
 
@@ -51,7 +53,7 @@
     <div>
         <img src="{{ $rutaImagen }}">
     </div>
-    <div>
+    <div class="contenido">
         <p>{!!$contenido!!}</p>
     </div>
     <footer>
