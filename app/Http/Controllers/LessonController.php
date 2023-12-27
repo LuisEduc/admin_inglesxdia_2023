@@ -498,7 +498,7 @@ class LessonController extends Controller
             ],
             [
                 "id" => 7,
-                "titulo" => "Método inmersivo 3 en 9 - Programa Intensivo",
+                "titulo" => "Método inmersivo 3 en 9",
                 "descripcion" => "Este en un programa intensivo en donde podrás desarrollar todas las habilidades comunicativas del Inglés, escuchar, leer, escribir, hablar, vas a lograr desarrollar estas habilidades en un periodo de solo 9 meses...",
                 "gratis" => false,
                 "link" => "https://go.hotmart.com/W89436757X?ap=2221",
