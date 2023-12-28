@@ -503,6 +503,13 @@ class LessonController extends Controller
                 "gratis" => false,
                 "link" => "https://go.hotmart.com/W89436757X?ap=2221",
             ],
+            [
+                "id" => 8,
+                "titulo" => "Habla inglés en 3 meses",
+                "descripcion" => "Con este curso, aprender inglés será más fácil. Perderás el miedo y entenderás la gramática de manera práctica en menos de 90 días, mucho más rápido que con los cursos tradicionales.",
+                "gratis" => false,
+                "link" => "https://go.hotmart.com/A89456656E?ap=427e",
+            ],
         ];
 
         $json['cursos'] = $cursos;
