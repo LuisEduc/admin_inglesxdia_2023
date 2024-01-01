@@ -496,20 +496,20 @@ class LessonController extends Controller
                 "gratis" => true,
                 "link" => "https://www.edx.org/es/learn/professional-writing/university-of-california-berkeley-how-to-write-an-essay",
             ],
-            [
-                "id" => 7,
-                "titulo" => "Método inmersivo 3 en 9",
-                "descripcion" => "Este es un programa intensivo en el que podrás desarrollar todas las habilidades comunicativas del inglés, como escuchar, leer, escribir y hablar. Lograrás desarrollar estas habilidades en un periodo de solo 9 meses.",
-                "gratis" => false,
-                "link" => "https://go.hotmart.com/W89436757X?ap=2221",
-            ],
-            [
-                "id" => 8,
-                "titulo" => "Habla inglés en 3 meses",
-                "descripcion" => "Con este curso, aprender inglés será más fácil. Perderás el miedo y entenderás la gramática de manera práctica en menos de 90 días, mucho más rápido que con los cursos tradicionales.",
-                "gratis" => false,
-                "link" => "https://go.hotmart.com/A89456656E?ap=427e",
-            ],
+            // [
+            //     "id" => 7,
+            //     "titulo" => "Método inmersivo 3 en 9",
+            //     "descripcion" => "Este es un programa intensivo en el que podrás desarrollar todas las habilidades comunicativas del inglés, como escuchar, leer, escribir y hablar. Lograrás desarrollar estas habilidades en un periodo de solo 9 meses.",
+            //     "gratis" => false,
+            //     "link" => "https://go.hotmart.com/W89436757X?ap=2221",
+            // ],
+            // [
+            //     "id" => 8,
+            //     "titulo" => "Habla inglés en 3 meses",
+            //     "descripcion" => "Con este curso, aprender inglés será más fácil. Perderás el miedo y entenderás la gramática de manera práctica en menos de 90 días, mucho más rápido que con los cursos tradicionales.",
+            //     "gratis" => false,
+            //     "link" => "https://go.hotmart.com/A89456656E?ap=427e",
+            // ],
         ];
 
         $json['cursos'] = $cursos;
