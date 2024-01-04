@@ -554,7 +554,15 @@ class LessonController extends Controller
                 "descripcion" => "Aprenda la diferencia entre in, on y at con este curso de inglés básico. Cubriremos las reglas básicas, ejemplos y ejercicios para que puedas utilizar las preposiciones correctas en cualquier contexto.",
                 "link" => "$direccion/in-on-at.pdf",
                 "archivo" => "$hoy-in-on-at.pdf"
-            ]
+            ],
+            [
+                "id" => 4,
+                "nivel" => "Curso de inglés básico",
+                "titulo" => "Uso de a y an",
+                "descripcion" => "Descubre cómo usar 'a' y 'an' en inglés con esta guía. Aprende a elegir entre ambos artículos según el sonido que sigue a cada uno. Incluye ejercicios para practicar y mejorar.",
+                "link" => "$direccion/a-an.pdf",
+                "archivo" => "$hoy-a-an.pdf"
+            ],
         ];
 
         $json['material'] = $material;
