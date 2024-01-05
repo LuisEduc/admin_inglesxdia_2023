@@ -48,6 +48,7 @@
             font-size: 1rem;
             left: 5rem;
             right: 0;
+            margin-top: 1rem;
             text-align: left;
         }
     </style>
