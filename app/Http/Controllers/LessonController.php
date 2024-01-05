@@ -575,8 +575,6 @@ class LessonController extends Controller
         $imagen = Lessonimage::where('id_lesson', $lesson->id)->first('imagen')->imagen;
         $rutaImagen = public_path("imagen/$imagen");
         $lesson->rutaImagen = $rutaImagen;
-        $titulo = $lesson->titulo;
-        $titulo_seo = $lesson->titulo_seo;
         $contenido = $lesson->contenido;
         $patron = '/\{pdf\}(.*?)\{pdf\}/s';
 
@@ -586,8 +584,6 @@ class LessonController extends Controller
         } else {
             abort(404);
         }
-
-        $contenido = $lesson->contenido;
 
         $pdf = Pdf::loadView('lessons.pdf', $lesson->toArray());
         $pdf->setPaper('A4', 'portrait');

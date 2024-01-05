@@ -37,7 +37,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/palabras/avanzado', 'App\Http\Controllers\PalabraController@avanzado')->name('palabras.avanzado');
     Route::get('/palabras/reproducir', 'App\Http\Controllers\PalabraController@reproducir')->name('palabras.reproducir');
     Route::get('/pushusers', 'App\Http\Controllers\PushuserController@index')->name('pushusers.index');
-    Route::get('/pdf/{slug}', 'App\Http\Controllers\LessonController@getPDF')->name('pdf');;
+    // Route::get('/pdf/{slug}', 'App\Http\Controllers\LessonController@getPDF')->middleware('auth');
 
     Route::resource('/lessons', LessonController::class);
     Route::resource('/categorias', CategoriaController::class);
