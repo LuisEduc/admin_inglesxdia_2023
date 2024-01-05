@@ -32,9 +32,9 @@
         .contenido ul,
         .contenido p {
             list-style-type: none;
-            font-size: 1.75rem;
+            font-size: 1.7rem;
             text-align: justify;
-            margin-top: 1rem;
+            margin: 12px 0;
         }
 
         .contenido p em,
@@ -48,7 +48,6 @@
             font-size: 1rem;
             left: 5rem;
             right: 0;
-            margin-top: 1rem;
             text-align: left;
         }
     </style>
