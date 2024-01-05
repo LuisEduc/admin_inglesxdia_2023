@@ -522,9 +522,10 @@ class LessonController extends Controller
         $hoy = date('YmdHis');
         $direccion = 'https://admin.inglesxdia.com/material';
 
+        // El 0 está reservado para pdf automático
         $material = [
             [
-                "id" => 0,
+                "id" => 1,
                 "nivel" => "Inglés intermedio",
                 "titulo" => "Guía para formar oraciones",
                 "descripcion" => "Aprende a formar oraciones en inglés de forma fácil y efectiva con este curso de inglés intermedio gratis. Incluye explicaciones claras, ejercicios, y ejemplos prácticos.",
@@ -532,7 +533,7 @@ class LessonController extends Controller
                 "archivo" => "$hoy-guia-para-formar-oraciones.pdf"
             ],
             [
-                "id" => 1,
+                "id" => 2,
                 "nivel" => "Curso de inglés básico",
                 "titulo" => "El verbo To Be",
                 "descripcion" => "En este curso básico de ingles, podrás aprender a usar el verbo To Be en sus formas afirmativa, negativa e interrogativa. Este verbo es fundamental en el idioma inglés, por lo que debes dominarlo.",
@@ -540,7 +541,7 @@ class LessonController extends Controller
                 "archivo" => "$hoy-curso-ingles-basico.pdf"
             ],
             [
-                "id" => 2,
+                "id" => 3,
                 "nivel" => "Curso intensivo de inglés",
                 "titulo" => "Guía de inglés para viajeros",
                 "descripcion" => "Prepárate para tu viaje a Estados Unidos con nuestro PDF Guía de Inglés para Viajeros. Aprende frases prácticas para aeropuertos, hoteles y situaciones comunes que facilitarán tu experiencia",
@@ -548,7 +549,7 @@ class LessonController extends Controller
                 "archivo" => "$hoy-ingles-para-viajeros.pdf"
             ],
             [
-                "id" => 3,
+                "id" => 4,
                 "nivel" => "Curso de inglés básico",
                 "titulo" => "In On At",
                 "descripcion" => "Aprenda la diferencia entre in, on y at con este curso de inglés básico. Cubriremos las reglas básicas, ejemplos y ejercicios para que puedas utilizar las preposiciones correctas en cualquier contexto.",
@@ -556,7 +557,7 @@ class LessonController extends Controller
                 "archivo" => "$hoy-in-on-at.pdf"
             ],
             [
-                "id" => 4,
+                "id" => 5,
                 "nivel" => "Curso de inglés básico",
                 "titulo" => "Uso de a y an",
                 "descripcion" => "Descubre cómo usar 'a' y 'an' en inglés con esta guía. Aprende a elegir entre ambos artículos según el sonido que sigue a cada uno. Incluye ejercicios para practicar y mejorar.",
